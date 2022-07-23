@@ -47,7 +47,8 @@ class WeatherActivity : ComponentActivity() {
 
         setContent {
             WeatherAppComposeTheme {
-                Box(modifier = Modifier.fillMaxSize()) {
+                Box(modifier = Modifier.fillMaxSize(),
+                contentAlignment = Alignment.Center) {
 
                     Column(
                         modifier = Modifier
@@ -59,7 +60,9 @@ class WeatherActivity : ComponentActivity() {
                             viewModel.state,
                             backgroundColor = DeepBlue
                         )
-                        Spacer(modifier = Modifier.height(16.dp))
+                        Spacer(modifier = Modifier.height(16.dp)
+                        )
+                        WeatherForecast(state = viewModel.state)
                     }
 
                     if (viewModel.state.isLoading) {

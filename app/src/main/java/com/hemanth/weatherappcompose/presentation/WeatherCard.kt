@@ -64,6 +64,12 @@ fun WeatherCard(
                     color = Color.White
                 )
                 Spacer(modifier = Modifier.height(16.dp))
+                Text(
+                    text = data.weatherType.weatherDesc,
+                    fontSize = 20.sp,
+                    color = Color.White
+                )
+                Spacer(modifier = Modifier.height(32.dp))
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceAround
