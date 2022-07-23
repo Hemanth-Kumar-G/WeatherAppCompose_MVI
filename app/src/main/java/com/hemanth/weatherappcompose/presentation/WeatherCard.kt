@@ -54,7 +54,7 @@ fun WeatherCard(
                 Spacer(modifier = Modifier.height(16.dp))
                 Image(
                     painter = painterResource(id = data.weatherType.iconRes),
-                    contentDescription = "weatherType Icon Respurce",
+                    contentDescription = null,
                     modifier = Modifier.width(200.dp)
                 )
                 Spacer(modifier = Modifier.height(16.dp))
